@@ -49,7 +49,7 @@ app.post("/stkpush", async (req, res) => {
     const { password, timestamp } = generatePassword();
 
     const shortcode = process.env.MPESA_SHORTCODE || "174379";
-    const callbackUrl = process.env.MPESA_CALLBACK_URL || "https://example.com/mpesa-callback";
+    const callbackUrl = process.env.MPESA_CALLBACK_URL || "https://mpesa-stk-render.onrender.com";
     const msisdn = formatPhone(phone);
 
     const payload = {
